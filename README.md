@@ -27,7 +27,7 @@ contents.
     #define PJ_DNS_SRV_MAX_ADDR 32
     #define PJSIP_MAX_RESOLVED_ADDRESSES 32
 
-Configure and build Telephone    
+Configure and build Telephone
 
     $ CFLAGS="-O2 -arch i386 -arch x86_64" ./configure --disable-ssl
     $ make
@@ -40,13 +40,14 @@ Telephone source code follows [Google Objective-C Style Guide][coding_style].
   [coding_style]: http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml
 
 
-
-
 Martins notes 1.0.4:
 --------------------
 
-The old svn portaudio is no longer avaiable, use this portaudio:
-  cd third_party/portaudio/; git clone https://git.assembla.com/portaudio.git; git checkout 00502b   
+* The old svn portaudio is no longer avaiable, use this portaudio:
 
-Change linker flags to your version: pjproject/pjlib/bin/pjlib-test-i386-apple-darwin15.5.0
-Build with 10.9 SDK with 10.11 as target (el capitan)
+         $ cd third_party/portaudio/
+         $ git clone https://git.assembla.com/portaudio.git
+         $ git checkout 00502b
+
+* Change linker flags to your version: pjproject/pjlib/bin/pjlib-test-i386-apple-darwin15.5.0
+* Build with 10.9 SDK with 10.11 as target (el capitan)
