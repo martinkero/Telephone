@@ -40,7 +40,7 @@
 static NSString * const kAKSIPAccountPboardType = @"AKSIPAccountPboardType";
 
 // Maximum number of accounts.
-static const NSUInteger kAccountsMax = 32;
+static const NSUInteger kAccountsMax = 128;
 
 @implementation AccountPreferencesViewController
 
