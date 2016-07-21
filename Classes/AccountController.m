@@ -1174,7 +1174,7 @@ NSString * const kEmailSIPLabel = @"sip";
   [[[NSApp delegate] ringtone] play];
   [[NSApp delegate] startRingtoneTimer];
   
-  if (![NSApp isActive]) {
+  if ((![NSApp isActive]) && ![[NSUserDefaults standardUserDefaults] boolForKey:kAutoAnswerIncomingCall]) {
     [NSApp requestUserAttention:NSInformationalRequest];
     [[NSApp delegate] startUserAttentionTimer];
   }

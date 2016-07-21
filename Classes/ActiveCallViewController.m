@@ -37,6 +37,7 @@
 #import "CallController.h"
 #import "CallTransferController.h"
 #import "EndedCallViewController.h"
+#import "PreferencesController.h"
 
 
 @implementation ActiveCallViewController
@@ -62,6 +63,8 @@
     enteredDTMF_ = [[NSMutableString alloc] init];
     [self setCallController:callController];
   }
+  if ([[NSUserDefaults standardUserDefaults] boolForKey:kAutoAnswerIncomingCall])
+  [[self callController] acceptCall];
   return self;
 }
 

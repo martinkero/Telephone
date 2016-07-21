@@ -1198,6 +1198,7 @@
 					"\"$(SRCROOT)/../pjproject/pjsip/lib\"",
 					"\"$(SRCROOT)/../pjproject/third_party/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = (
 					"-DPJ_AUTOCONF=1",
 					"-DNDEBUG",
@@ -1229,6 +1230,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer: martin.kero@gmail.com (D83REAGQKZ)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1254,6 +1256,7 @@
 					"\"$(SRCROOT)/../pjproject/pjsip/lib\"",
 					"\"$(SRCROOT)/../pjproject/third_party/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = (
 					"-DPJ_AUTOCONF=1",
 					"-DNDEBUG",

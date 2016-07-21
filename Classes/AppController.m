@@ -289,6 +289,8 @@ static void NameserversChanged(SCDynamicStoreRef store,
     [defaultsDict setObject:[NSNumber numberWithBool:NO]
                      forKey:kAutoCloseMissedCallWindow];
     [defaultsDict setObject:[NSNumber numberWithBool:YES] forKey:kCallWaiting];
+    defaultsDict[kAutoAnswerIncomingCall] = @NO;
+
     
     NSString *preferredLocalization
       = [[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0];

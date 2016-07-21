@@ -63,6 +63,7 @@ NSString * const kUseDNSSRV = @"UseDNSSRV";
 NSString * const kSignificantPhoneNumberLength = @"SignificantPhoneNumberLength";
 NSString * const kPauseITunes = @"PauseITunes";
 NSString * const kAutoCloseCallWindow = @"AutoCloseCallWindow";
+NSString * const kAutoAnswerIncomingCall = @"AutoAnswerIncomingCall";
 NSString * const kAutoCloseMissedCallWindow = @"AutoCloseMissedCallWindow";
 NSString * const kCallWaiting = @"CallWaiting";
 
