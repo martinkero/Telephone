@@ -38,3 +38,12 @@ Coding Style
 Telephone source code follows [Google Objective-C Style Guide][coding_style].
 
   [coding_style]: http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml
+
+
+Martins notes 1.0.4:
+
+The old svn portaudio is no longer avaiable, use this pjproject:
+cd third_party/portaudio/; git clone https://git.assembla.com/portaudio.git; git checkout 00502b   
+
+Change linker flags to your version: pjproject/pjlib/bin/pjlib-test-i386-apple-darwin15.5.0
+Build with 10.9 SDK with 10.11 as target (el capitan)
